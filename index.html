@@ -78,7 +78,7 @@
       <section class="section-main section">
         <div class="container flex-main">
           <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button-main" type="button">Zamów usługe</button>
+          <button class="button-main" type="button" data-modal-open>Zamów usługe</button>
         </div>
       </section>
       <section style="padding-bottom: 0px" class="section-secondary section">
@@ -431,8 +431,12 @@
           </ul>
         </div>
       </div>
+      <div class="overlay is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>X</button>
+        </div>
+      </div>
     </footer>
-  
     <script src="./js/modal.js"></script>
   </body>
 </html>
