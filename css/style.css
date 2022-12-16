@@ -407,6 +407,14 @@ fill:var(--highlight-color);}
   box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.figure-portfolio:hover .technocrack-container
+ {
+  opacity:1; 
+  transform: scale(1);
+  transform: translateY(-100%);
+  
+}
 .social.icons-team{border-radius: 50%;
 }
 
@@ -508,14 +516,15 @@ display: flex;
     position:absolute;
     opacity: 0;
     transform:scale(0);
+    transform: translatey(0);
+    transition: transform 250ms ease;
+   top:0;
+    left:0;
+  
   }
-.technocrack-container:hover
-{
-opacity:1px;
-transform: scale(1);
-transition:250ms;
 
-}
+
+
   .technocrack-text{font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -527,5 +536,6 @@ transition:250ms;
 padding-left:24px;
 padding-top:49px;
 padding-bottom:49px;
-padding-right:45px;}
+padding-right:45px;
+}
   
