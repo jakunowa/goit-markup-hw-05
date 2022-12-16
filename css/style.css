@@ -141,13 +141,22 @@ body {
 }
 .active {
   color: var(--highlight-color);
-
-
+  position:relative;
 }
 
 .active::after{
-  text-decoration: overline;
+  content:"";
+  border-bottom:solid 4px var(--highlight-color);
+  width:53px;
   color:var(--highlight-color);
+  display: block;
+  position:absolute;
+  bottom:-32px;
+
+  
+
+
+ 
 }
 
 .links:hover {
