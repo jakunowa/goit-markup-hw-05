@@ -398,7 +398,8 @@ fill:var(--highlight-color);}
   margin-left:70px;}
 
   .figure-portfolio{transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position:relative;}
+  position:relative;
+}
 
 .figure-portfolio:hover,
 .figure-portfolio:focus{
@@ -505,8 +506,16 @@ display: flex;
 }
   .technocrack-container{
     position:absolute;
+    opacity: 0;
+    transform:scale(0);
   }
+.technocrack-container:hover
+{
+opacity:1px;
+transform: scale(1);
+transition:250ms;
 
+}
   .technocrack-text{font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
