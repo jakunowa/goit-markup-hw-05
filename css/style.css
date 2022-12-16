@@ -141,7 +141,15 @@ body {
 }
 .active {
   color: var(--highlight-color);
+
+
 }
+
+.active::after{
+  text-decoration: overline;
+  color:var(--highlight-color);
+}
+
 .links:hover {
   color: var(--highlight-color);
 }
